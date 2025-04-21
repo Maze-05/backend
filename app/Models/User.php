@@ -10,6 +10,6 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     public function reservations() {
-        return $this->hasMany(Reservation::classes);
+        return $this->hasMany(Reservation::class);
     }
 }
