@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+    padding: 0;
+  }
+
+body {
+  font-family: "Muli", sans-serif;
+  background: #f1faee;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main{
+  margin: 20px;
+}
+
+/* Header */
+header {
+  background: #2e7d32;
+  color: #f1faee;
+  padding: 15px 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Form */
+form {
+  background: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 10px;
+}
+
+button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+/* Expanding Cards */
+.container {
+  display: flex;
+  width: 70vw;
+  gap: 10px;
+  padding: 20px;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in-out;
+}
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+  flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  body{
+    height: 100%;
+  }
+
+  .panel {
+    height: 40vh;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .panel h3 {
+    font-size: 18px;
+  }
+}
+
+.background-video {
+  position: fixed ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensures the video stays in the background */
+}
+
+.login-icon {
+  width: 50px;  /* Adjust size as needed */
+  height: 50px;
+  margin-right: 8px;  /* Adds space between icon and text */
+  vertical-align: middle;
+}
+body {
+  margin: 0;
+  background: linear-gradient(#0d0d0d, #212121);
+  font-family: "Euclid Circular A", "Poppins";
+  color: #d6dfed;
+}
+
+/* the footer */
+
+footer {
+  background-color: #2e7d32; /* Footer background color */
+  color: white; /* Text color */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Arial', sans-serif; /* Change to your desired font */
+  font-size: 18px; /* Increase font size */
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: white; /* Icon color */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 28px; /* Increase icon size */
+}
+
+.contact-info {
+  margin: 10px 0;
+}
+
+.contact-info p {
+  margin: 5px 0; /* Spacing between contact info */
+  font-size: 20px; /* Increase contact info font size */
+}
+
+.contact-info a {
+  color: white; /* Ensure links are white */
+  text-decoration: underline; /* Optional: underline links */
+}
