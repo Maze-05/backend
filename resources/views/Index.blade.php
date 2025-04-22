@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> QuickKick </title>
-    <link rel="icon" type="image/ico" href="assets/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/ico" href="../../public/ASSETS/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
    
    <video autoplay loop muted playsinline class="background-video">
-    <source src="assets\WhatsApp Video 2025-03-11 at 16.10.20_62b9b585.webm" type="video/webm">
+    <source src="../../public/ASSETS/WhatsApp Video 2025-03-11 at 16.10.20_62b9b585.webm" type="video/webm">
 </video>
 
       
@@ -24,8 +24,8 @@
         <nav>
             <ul>
                 <li>
-                <a href="pages/login.html">
-                    <img src=assets\login.png  class="login-icon"> Login
+                <a href="login.blade.php" class="login">
+                    <img src=../../public/ASSETS/login.png  class="login-icon"> Login
                 </a>
             </li>
             </ul>
@@ -37,7 +37,7 @@
         <div class="main">
             <h1>Book Your Field Easily</h1>
             <button class="book" onclick=
-            "window.location.href='pages/reservation.html'">Book Now</button>
+            "window.location.href='reservation.blade.php'">Book Now</button>
         </div>
         
         </div>
@@ -46,7 +46,7 @@
                     <div
                       class="panel active"
                       style="
-                        background-image: url('assets/field A.jpg');">
+                        background-image: url('../../public/ASSETS/field A.jpg');">
                    
                     <div>
                       <h3 >Field A</h3>
@@ -55,21 +55,21 @@
                     <div
                       class="panel"
                       style="
-                        background-image: url('assets/field B.jpg');">
+                        background-image: url('../../public/ASSETS/field B.jpg');">
                       
                       <h3>Field B</h3>
                     </div>
                     <div
                       class="panel"
                       style="
-                        background-image: url('assets/field C.jpg');">
+                        background-image: url('../../public/ASSETS/field C.jpg');">
                      
                       <h3>Field C</h3>
                     </div>
                     <div
                       class="panel"
                       style="
-                        background-image: url('assets/field D.jpg');
+                        background-image: url('../../public/ASSETS/field D.jpg');
                       "
                     >
                       <h3>Field D</h3>
@@ -77,7 +77,7 @@
                     <div
                       class="panel"
                       style="
-                        background-image: url('assets/field E.jpg');
+                        background-image: url('../../public/ASSETS/field E.jpg');
                       "
                     >
                       <h3>Field E</h3>
